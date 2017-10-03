@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  hubble:
+    lang: python3
+    handler: ./functions/hubble
+    image: zooniverse/func_i2a_hubble
