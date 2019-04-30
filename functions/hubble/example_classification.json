@@ -1,0 +1,67 @@
+{
+  "id": "88262",
+  "project_id": 1315,
+  "workflow_id": 2218,
+  "workflow_version": "12.10",
+  "subject_id": 72880,
+  "user_id": 1325464,
+  "annotations": {
+    "T1": [
+      {
+        "task": "T1",
+        "value": [
+          {
+            "width": 80.36077880859375,
+            "tool": 0,
+            "0": 0,
+            "details": [],
+            "x": 541.7737426757812,
+            "frame": 0
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "utc_offset": "18000",
+    "finished_at": "2017-10-02T16:17:11.535Z",
+    "workflow_version": "12.10",
+    "live_project": false,
+    "subject_dimensions": [
+      {
+        "clientWidth": 444,
+        "clientHeight": 333,
+        "naturalWidth": 1152,
+        "naturalHeight": 864
+      }
+    ],
+    "session": "02d06de439a56dadbb553e95e96fcd40c44831f39e33e95c999f6e9577fd77ba",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+    "user_language": "en",
+    "user_group_ids": [],
+    "started_at": "2017-10-02T16:16:45.225Z",
+    "viewport": {
+      "width": 1067,
+      "height": 1006
+    }
+  },
+  "subject": {
+    "id": 72880,
+    "metadata": {
+      "RA": "121.62522",
+      "Dec": "17.42804",
+      "URL": "http://skyserver.sdss.org/dr12/en/tools/explore/Summary.aspx?ra=121.62522&dec=17.42804",
+      "spiral": "0",
+      "elliptical": "1",
+      "Distance_Mpc": "481.4064706",
+      "SVG_filename": "1237665128518320259.svg",
+      "#Published_Redshift": "0.1091188"
+    },
+    "created_at": "2017-10-02T16:17:14.773Z",
+    "updated_at": "2017-10-02T16:17:14.773Z"
+  },
+  "gold_standard": null,
+  "expert_classifier": null,
+  "created_at": "2017-10-02T16:17:11.623Z",
+  "updated_at": "2017-10-02T16:17:11.675Z"
+}

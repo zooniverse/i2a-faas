@@ -1,4 +1,6 @@
 import json
+import sys
+import logging
 
 def get_classification(parsed_json):
     # Gets the first (only) task's annotation's 'values', pulling the first from lists when required
@@ -31,9 +33,10 @@ def calc_lambda_central(classification):
     lambdacen = (xleft + (width / 2.) - xmin) * lamperpix + lambdamin
     return lambdacen
 
-def handle(st):
+def handle(event, context):
     try:
-        parsed_json = json.loads(st)
+        # parsed_json = json.loads(event['data'])
+        parsed_json = event['data']
         classification = get_classification(parsed_json)
         galaxy_metadata = get_galaxy_metadata(parsed_json['subject']['metadata'])
         lambdacen = calc_lambda_central(classification)
@@ -54,6 +57,7 @@ def handle(st):
     except json.JSONDecodeError:
         response = {'error' : "Invalid json"}
     except:
+        logging.exception("Unidentified exception")
         response = {'error' : "Missing data or invalid classification"}
     finally:
-        print(json.dumps(response))
+        return json.dumps(response)
